@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="icon" href="./images/laptop-code-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+ <header>
+   <div class="brand">
+    <i class="fa-solid fa-mug-hot"></i>
+    <a href="home.html" class="logo">ITI COFFEE</a>
+  </div>
+  <nav class="navigation">
+    <a href="home.html#history">Our History</a>
+    <a href="product.html#products">Products</a>
+    <a href="cart.html">
+  Your Cart <span id="cartCount">(0)</span>
+</a>
+    <a href="home.html#contact">Contact Us</a>
+  </nav>
+  </header>
+
+<section id="products" style="padding-top:120px">
+  <div class="product-filters">
+  <button class="active" onclick="filterProducts('All', this)">All</button>
+  <button onclick="filterProducts('Coffee', this)">Coffee</button>
+  <button onclick="filterProducts('Beans', this)">Beans</button>
+  <button onclick="filterProducts('tea', this)">Tea</button>
+</div>
+
+  <div id="productsGrid" class="products-grid"></div>
+</section>
+
+<button id="btnscroll"> ^ </button>
+<footer>
+  <p>&copy; 2025 Albraa Nawara. All rights reserved.</p>
+</footer>
+    <script src="script3.js"></script>
+</body>
+</html>

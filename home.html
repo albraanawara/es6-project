@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITI Coffie Shop</title>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="icon" href="./images/laptop-code-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <header>
+   <div class="brand">
+    <i class="fa-solid fa-mug-hot"></i>
+    <a href="home.html" class="logo">ITI COFFEE</a>
+  </div>
+  <nav class="navigation">
+    <a href="home.html#history">Our History</a>
+    <a href="product.html#products">Products</a>
+    <a href="cart.html">
+  Your Cart <span id="cartCount">(0)</span>
+</a>
+    <a href="home.html#contact">Contact Us</a>
+  </nav>
+  </header>
+  <section>
+    <div class="slider">
+    <div class="slides">
+        <div class="slide"><img src="coffee shop.jpeg" alt="Coffee 1"></div>
+        <div class="slide"><img src="coffee.jpg" alt="Coffee 2"></div>
+        <div class="slide"><img src="cappatchino.jpg" alt="Coffee 3"></div>
+        <div class="slide"><img src="milksheek.jpg" alt="Coffee 4"></div>
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+    </div>
+  <div class="dots">
+    <span class="dot" onclick="currentSlide(0)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+
+  </section>
+  
+  <section id="history">
+    <div class="history-container">
+        <div class="history-content">
+        <h2>Our History</h2>
+        <p><strong>Coffee for Programmers:</strong> Founded in 2010, our coffee shop has been the perfect spot for developers and tech enthusiasts to code, relax, and enjoy the finest coffee. From humble beginnings to a growing community, we serve handcrafted coffee with passion.</p>
+        <div class="timeline">
+            <div class="event">
+            <h3>2010</h3>
+            <p>Our first coffee shop opened, bringing specialty coffee to the neighborhood.</p>
+            </div>
+        <div class="event">
+          <h3>2015</h3>
+          <p>Expanded to three new locations and started roasting our own beans.</p>
+        </div>
+        <div class="event">
+          <h3>2020</h3>
+          <p>Launched online store and subscription service for coffee enthusiasts worldwide.</p>
+        </div>
+        </div>
+        </div>
+        <div class="history-image">
+        <img src="our history.png" alt="Coffee for Programmer">
+        </div>
+    </div>
+  </section>
+
+  <section id="contact">
+  <h2>Contact Us</h2>
+  <p>Have a question about our coffee or menu? Contact us anytime — we’re happy to help</p>
+  
+  <div class="contact-info">
+    <p><i class="fas fa-envelope"></i> albraanawara@gmail.com</p>
+    <p><i class="fab fa-whatsapp"></i> +20 1092040967</p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/albraa-nawara-139666242" target="_blank">LinkedIn</a></p>
+  </div>
+  <form action="https://formspree.io/f/xvzoavvp" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p id="form-message" style="display: none; color: green;">Thanks for Contacting Us!</p>
+  <div class="contact-social">
+    <a href="https://github.com/albraanawara"target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://x.com/AlbraaNawara"target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://www.instagram.com/braa_nawara"target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/braafady"target="_blank"><i class="fab fa-facebook-f"></i></a>
+  </div>
+</section>
+<button id="btnscroll"> ^ </button>
+<footer>
+  <p>&copy; 2025 Albraa Nawara. All rights reserved.</p>
+</footer>
+    <script src="script2.js"></script>
+</body>
+</html>

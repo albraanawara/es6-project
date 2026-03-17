@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <i class="fa-solid fa-mug-hot"></i>
+    <a href="home.html" class="logo">ITI COFFEE</a>
+  </div>
+  <nav class="navigation">
+    <a href="home.html">Home</a>
+    <a href="product.html">Products</a>
+  </nav>
+</header>
+
+<section id="cart" style="padding-top:120px">
+  <h2>Your Cart</h2>
+  <div id="cartItems"></div>
+  <div id="cartSummary">
+    <h3>Total: <span id="totalPrice">0</span> EGP</h3>
+   <div class="cart-buttons">
+  <button class="clear-cart">Clear Cart</button>
+  <button class="checkout">Checkout</button>
+</div>
+
+
+<div id="flyBox"></div>
+
+  </div>
+</section>
+
+<script src="cart.js"></script>
+</body>
+</html>

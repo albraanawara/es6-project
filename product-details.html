@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Product Details</title>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <i class="fa-solid fa-mug-hot"></i>
+    <a href="home.html" class="logo">ITI COFFEE</a>
+  </div>
+  <nav class="navigation">
+    <a href="product.html">⬅ Back to Products</a>
+  </nav>
+</header>
+
+<section class="details">
+  <img id="productImg" />
+  <div class="info">
+    <h2 id="productName"></h2>
+    <p id="productDesc"></p>
+    <h3 id="productPrice"></h3>
+    <div class="quantity-wrapper">
+  Quantity:
+  <input type="number" id="qtyInput" value="1" min="1">
+</div>
+    <button id="addToCartBtn">Add to Cart</button>
+  </div>
+</section>
+
+
+<script src="product-details.js"></script>
+</body>
+</html>
